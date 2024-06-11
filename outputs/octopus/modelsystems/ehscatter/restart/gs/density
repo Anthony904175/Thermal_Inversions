@@ -1,0 +1,6 @@
+#     #spin    #nspin    filename
+%densities
+       1 |        2 | "density-sp1"
+       2 |        2 | "density-sp2"
+%
+Iter =      44

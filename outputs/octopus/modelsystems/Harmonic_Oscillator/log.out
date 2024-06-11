@@ -1,0 +1,853 @@
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+                                ___
+                             .-'   `'.
+                            /         \
+                            |         ;
+                            |         |           ___.--,
+                   _.._     |0) ~ (0) |    _.---'`__.-( (_.
+            __.--'`_.. '.__.\    '--. \_.-' ,.--'`     `""`
+           ( ,.--'`   ',__ /./;   ;, '.__.'`    __
+           _`) )  .---.__.' / |   |\   \__..--""  """--.,_
+          `---' .'.''-._.-'`_./  /\ '.  \ _.-~~~````~~~-._`-.__.'
+                | |  .' _.-' |  |  \  \  '.               `~---`
+                 \ \/ .'     \  \   '. '-._)
+                  \/ /        \  \    `=.__`~-.
+             jgs  / /\         `) )    / / `"".`\
+            , _.-'.'\ \        / /    ( (     / /
+             `--~`   ) )    .-'.'      '.'.  | (
+                    (/`    ( (`          ) )  '-;
+                     `      '-;         (-'
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2, or (at your option)
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+                           Running octopus
+
+Version                : 12.1
+Commit                 :
+Build time             : Wed Apr 10 13:56:05 PDT 2024
+Configuration options  : maxdim3 openmp mpi sse2 avx libxc_fxc libxc_kxc
+Optional libraries     : gdlib metis scalapack
+Architecture           : x86_64
+C compiler             : mpiicc (icc)
+C compiler flags       : -O3 -qopt-zmm-usage=high -fma -g -traceback
+C++ compiler           : mpiicpc (icpc)
+C++ compiler flags     : -g -O2
+Fortran compiler       : mpiifort (ifort) (Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.4.0 Build 20210910_000000)
+Fortran compiler flags : -O3 -fopenmp
+
+          The octopus is swimming in node067.cluster (Linux)
+
+
+            Calculation started on 2024/04/29 at 12:09:27
+
+
+************************** Calculation Mode **************************
+Input: [CalculationMode = gs]
+**********************************************************************
+
+
+******************************* Space ********************************
+Octopus will run in 1 dimension(s).
+Octopus will treat the system as periodic in 0 dimension(s).
+**********************************************************************
+
+Input: [PseudopotentialSet = standard]
+Reading Coordinates from Coordinates block
+Info: default mass for species HO:    1.000000 amu.
+Info: default vdW radius for species HO:    0.000000 [b]
+
+****************************** Species *******************************
+Species "HO" is a user-defined potential.
+   Potential = 0.5*x^2
+Number of orbitals:      5
+**********************************************************************
+
+Input: [CurvMethod = curv_affine]
+Input: [DerivativesStencil = stencil_star]
+Input: [SpinComponents = unpolarized]
+Input: [SmearingFunction = semiconducting]
+Input: [SymmetrizeDensity = no]
+
+******************************* States *******************************
+Total electronic charge  =        2.000
+Number of states         =        1
+States block-size        =        1
+**********************************************************************
+
+
+************************** Parallelization ***************************
+Info: Octopus will run in *parallel*
+
+      Number of processes           :      56
+      Number of threads per process :       1
+
+Info: Number of nodes in ParDomains  group:    56 (         201)
+Info: Octopus will waste at least 10.27% of computer time.
+
+** Warning:
+**   I have fewer elements in a parallel group than recommended.
+**   Maybe you should reduce the number of nodes.
+
+**********************************************************************
+
+
+** Warning:
+**   Could not find 'restart/partition' directory for restart.
+**   No restart information will be read.
+
+Info: Using METIS 5 multilevel k-way algorithm to partition the mesh.
+Info: Mesh Partition restart information will be written to 'restart/partition'.
+Info: Finished writing information to 'restart/partition'.
+Info: Mesh partition:
+
+      Partition quality:    0.287770E-03
+
+                 Neighbours         Ghost points
+      Average  :          3                    8
+      Minimum  :          1                    4
+      Maximum  :          4                    8
+
+      Nodes in domain-group      1
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      2
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      3
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      4
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      5
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      6
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      7
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      8
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      9
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     10
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     11
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     12
+        Neighbours     :         4        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     13
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     14
+        Neighbours     :         4        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     15
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     16
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     17
+        Neighbours     :         1        Local points    :         4
+        Ghost points   :         4        Boundary points :         4
+      Nodes in domain-group     18
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     19
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     20
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     21
+        Neighbours     :         4        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     22
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     23
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     24
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     25
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     26
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     27
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     28
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     29
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     30
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     31
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     32
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     33
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     34
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     35
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     36
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     37
+        Neighbours     :         4        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     38
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     39
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     40
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     41
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     42
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     43
+        Neighbours     :         4        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     44
+        Neighbours     :         4        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     45
+        Neighbours     :         4        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     46
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     47
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     48
+        Neighbours     :         3        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     49
+        Neighbours     :         4        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     50
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     51
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         7        Boundary points :         1
+      Nodes in domain-group     52
+        Neighbours     :         1        Local points    :         3
+        Ghost points   :         4        Boundary points :         4
+      Nodes in domain-group     53
+        Neighbours     :         2        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     54
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     55
+        Neighbours     :         3        Local points    :         4
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     56
+        Neighbours     :         2        Local points    :         3
+        Ghost points   :         8        Boundary points :         0
+
+Info: Generating weights for finite-difference discretization of x-gradient
+Info: Generating weights for finite-difference discretization of Laplacian
+
+******************************** Grid ********************************
+Simulation Box:
+  Type = sphere
+  Radius  [b] =  10.000
+Main mesh:
+  Spacing [b] = ( 0.100)    volume/point [b] =      0.10000
+  # inner mesh =        201
+  # total mesh =        210
+  Grid Cutoff [H] =   493.480220    Grid Cutoff [Ry] =   986.960440
+**********************************************************************
+
+Info: states-block size = 0.0 MiB
+Input: [StatesPack = yes]
+Input: [StatesOrthogonalization = cholesky_serial]
+
+**************************** Theory Level ****************************
+Input: [TheoryLevel = independent_particles]
+**********************************************************************
+
+
+****************************** Hartree *******************************
+Input: [DressedOrbitals = no]
+The chosen Poisson solver is 'fast Fourier transform'
+Input: [PoissonFFTKernel = spherical]
+**********************************************************************
+
+Info: FFT grid dimensions       = 405
+      Total grid size           = 405 (      0.0 MiB )
+Info: Poisson Cutoff Radius     =  20.2 b
+Input: [FilterPotentials = filter_TS]
+Input: [RelativisticCorrection = non_relativistic]
+Input: [DFTULevel = dft_u_none]
+Input: [MagneticConstrain = 0]
+
+****************** Approximate memory requirements *******************
+Mesh
+  global  :       0.0 MiB
+  local   :       0.0 MiB
+  total   :       0.0 MiB
+
+States
+  real    :       0.0 MiB (par_kpoints + par_states + par_domains)
+  complex :       0.0 MiB (par_kpoints + par_states + par_domains)
+
+**********************************************************************
+
+Info: Generating external potential
+      done.
+Info: Octopus initialization completed.
+Info: Starting calculation mode.
+Info: Allocating ground state wave-functions
+Info: Blocks of states
+      Block       1 contains       1 states:       1 -       1
+Info: Ground-state allocation done.
+Input: [MixField = none] (what to mix during SCF cycles)
+
+**************************** Eigensolver *****************************
+Input: [Eigensolver = cg]
+Input: [Preconditioner = pre_filter]
+Info: Generating weights for finite-difference discretization of Preconditioner
+Input: [PreconditionerFilterFactor = 0.5000]
+Input: [SubspaceDiagonalization = standard]
+**********************************************************************
+
+Input: [EigensolverSkipKpoints = no]
+Input: [LCAOStart = lcao_none]
+Info: Unnormalized total charge =      2.000000
+Info: Renormalized total charge =      2.000000
+Info: Setting up Hamiltonian.
+Orthogonalizing wavefunctions.
+Info: Ground-state restart information will be written to 'restart/gs'.
+Info: SCF using real wavefunctions.
+Info: Starting SCF iteration.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    1 ************************
+ etot  =  6.78827063E+00 abs_ev   =  9.63E+01 rel_ev   =  1.42E+01
+ ediff =        6.79E+00 abs_dens =  2.06E+00 rel_dens =  1.03E+00
+Matrix vector products:      4
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        3.394135    2.000000   ( 1.1E+01)
+
+Elapsed time for SCF step     1:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    2 ************************
+ etot  =  1.40831059E+00 abs_ev   =  5.38E+00 rel_ev   =  3.82E+00
+ ediff =        5.38E+00 abs_dens =  1.52E+00 rel_dens =  7.61E-01
+Matrix vector products:      8
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.704155    2.000000   ( 4.4E+00)
+
+Elapsed time for SCF step     2:          0.03
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    3 ************************
+ etot  =  1.07564519E+00 abs_ev   =  3.33E-01 rel_ev   =  3.09E-01
+ ediff =        3.33E-01 abs_dens =  6.52E-01 rel_dens =  3.26E-01
+Matrix vector products:     10
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.537823    2.000000   ( 3.5E+00)
+
+Elapsed time for SCF step     3:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    4 ************************
+ etot  =  1.01964238E+00 abs_ev   =  5.60E-02 rel_ev   =  5.49E-02
+ ediff =        5.60E-02 abs_dens =  1.09E-01 rel_dens =  5.45E-02
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.509821    2.000000   ( 1.8E+00)
+
+Elapsed time for SCF step     4:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    5 ************************
+ etot  =  1.00534675E+00 abs_ev   =  1.43E-02 rel_ev   =  1.42E-02
+ ediff =        1.43E-02 abs_dens =  2.07E-02 rel_dens =  1.04E-02
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.502673    2.000000   ( 9.4E-01)
+
+Elapsed time for SCF step     5:          0.04
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    6 ************************
+ etot  =  1.00231719E+00 abs_ev   =  3.03E-03 rel_ev   =  3.02E-03
+ ediff =        3.03E-03 abs_dens =  1.40E-02 rel_dens =  7.01E-03
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.501159    2.000000   ( 6.1E-01)
+
+Elapsed time for SCF step     6:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    7 ************************
+ etot  =  1.00112498E+00 abs_ev   =  1.19E-03 rel_ev   =  1.19E-03
+ ediff =        1.19E-03 abs_dens =  1.38E-02 rel_dens =  6.90E-03
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500562    2.000000   ( 4.3E-01)
+
+Elapsed time for SCF step     7:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    8 ************************
+ etot  =  1.00045968E+00 abs_ev   =  6.65E-04 rel_ev   =  6.65E-04
+ ediff =        6.65E-04 abs_dens =  3.56E-03 rel_dens =  1.78E-03
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500230    2.000000   ( 2.7E-01)
+
+Elapsed time for SCF step     8:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    9 ************************
+ etot  =  1.00025780E+00 abs_ev   =  2.02E-04 rel_ev   =  2.02E-04
+ ediff =        2.02E-04 abs_dens =  2.31E-03 rel_dens =  1.16E-03
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500129    2.000000   ( 2.0E-01)
+
+Elapsed time for SCF step     9:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   10 ************************
+ etot  =  1.00014726E+00 abs_ev   =  1.11E-04 rel_ev   =  1.11E-04
+ ediff =        1.11E-04 abs_dens =  1.82E-03 rel_dens =  9.11E-04
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500074    2.000000   ( 1.6E-01)
+
+Elapsed time for SCF step    10:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   11 ************************
+ etot  =  1.00008712E+00 abs_ev   =  6.01E-05 rel_ev   =  6.01E-05
+ ediff =        6.01E-05 abs_dens =  5.28E-04 rel_dens =  2.64E-04
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500044    2.000000   ( 1.2E-01)
+
+Elapsed time for SCF step    11:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   12 ************************
+ etot  =  1.00005331E+00 abs_ev   =  3.38E-05 rel_ev   =  3.38E-05
+ ediff =        3.38E-05 abs_dens =  4.67E-04 rel_dens =  2.34E-04
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500027    2.000000   ( 9.4E-02)
+
+Elapsed time for SCF step    12:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   13 ************************
+ etot  =  1.00002969E+00 abs_ev   =  2.36E-05 rel_ev   =  2.36E-05
+ ediff =        2.36E-05 abs_dens =  3.74E-04 rel_dens =  1.87E-04
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500015    2.000000   ( 7.0E-02)
+
+Elapsed time for SCF step    13:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   14 ************************
+ etot  =  1.00001770E+00 abs_ev   =  1.20E-05 rel_ev   =  1.20E-05
+ ediff =        1.20E-05 abs_dens =  4.63E-04 rel_dens =  2.32E-04
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500009    2.000000   ( 5.4E-02)
+
+Elapsed time for SCF step    14:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   15 ************************
+ etot  =  1.00001064E+00 abs_ev   =  7.06E-06 rel_ev   =  7.06E-06
+ ediff =        7.06E-06 abs_dens =  1.34E-04 rel_dens =  6.72E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500005    2.000000   ( 4.2E-02)
+
+Elapsed time for SCF step    15:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   16 ************************
+ etot  =  1.00000640E+00 abs_ev   =  4.24E-06 rel_ev   =  4.24E-06
+ ediff =        4.24E-06 abs_dens =  1.24E-04 rel_dens =  6.18E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500003    2.000000   ( 3.2E-02)
+
+Elapsed time for SCF step    16:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   17 ************************
+ etot  =  1.00000386E+00 abs_ev   =  2.54E-06 rel_ev   =  2.54E-06
+ ediff =        2.54E-06 abs_dens =  8.19E-05 rel_dens =  4.09E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500002    2.000000   ( 2.5E-02)
+
+Elapsed time for SCF step    17:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   18 ************************
+ etot  =  1.00000230E+00 abs_ev   =  1.56E-06 rel_ev   =  1.56E-06
+ ediff =        1.56E-06 abs_dens =  5.62E-05 rel_dens =  2.81E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500001    2.000000   ( 1.9E-02)
+
+Elapsed time for SCF step    18:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   19 ************************
+ etot  =  1.00000136E+00 abs_ev   =  9.39E-07 rel_ev   =  9.39E-07
+ ediff =        9.39E-07 abs_dens =  7.82E-05 rel_dens =  3.91E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500001    2.000000   ( 1.5E-02)
+
+Elapsed time for SCF step    19:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   20 ************************
+ etot  =  1.00000073E+00 abs_ev   =  6.33E-07 rel_ev   =  6.33E-07
+ ediff =        6.33E-07 abs_dens =  8.37E-05 rel_dens =  4.19E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 1.1E-02)
+
+Elapsed time for SCF step    20:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   21 ************************
+ etot  =  1.00000033E+00 abs_ev   =  4.03E-07 rel_ev   =  4.03E-07
+ ediff =        4.03E-07 abs_dens =  2.35E-04 rel_dens =  1.17E-04
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 7.1E-03)
+
+Elapsed time for SCF step    21:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   22 ************************
+ etot  =  1.00000018E+00 abs_ev   =  1.47E-07 rel_ev   =  1.47E-07
+ ediff =        1.47E-07 abs_dens =  1.84E-04 rel_dens =  9.20E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 5.5E-03)
+
+Elapsed time for SCF step    22:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   23 ************************
+ etot  =  1.00000006E+00 abs_ev   =  1.21E-07 rel_ev   =  1.21E-07
+ ediff =        1.21E-07 abs_dens =  4.75E-05 rel_dens =  2.37E-05
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 3.0E-03)
+
+Elapsed time for SCF step    23:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   24 ************************
+ etot  =  1.00000002E+00 abs_ev   =  3.55E-08 rel_ev   =  3.55E-08
+ ediff =        3.55E-08 abs_dens =  5.81E-05 rel_dens =  2.91E-05
+Matrix vector products:     10
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 2.0E-03)
+
+Elapsed time for SCF step    24:          0.02
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   25 ************************
+ etot  =  1.00000001E+00 abs_ev   =  1.24E-08 rel_ev   =  1.24E-08
+ ediff =        1.24E-08 abs_dens =  1.15E-05 rel_dens =  5.73E-06
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 1.4E-03)
+
+Elapsed time for SCF step    25:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   26 ************************
+ etot  =  1.00000001E+00 abs_ev   =  5.53E-09 rel_ev   =  5.53E-09
+ ediff =        5.53E-09 abs_dens =  1.07E-05 rel_dens =  5.36E-06
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 1.0E-03)
+
+Elapsed time for SCF step    26:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   27 ************************
+ etot  =  1.00000000E+00 abs_ev   =  2.83E-09 rel_ev   =  2.83E-09
+ ediff =        2.83E-09 abs_dens =  5.22E-06 rel_dens =  2.61E-06
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 7.6E-04)
+
+Elapsed time for SCF step    27:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   28 ************************
+ etot  =  1.00000000E+00 abs_ev   =  1.58E-09 rel_ev   =  1.58E-09
+ ediff =        1.58E-09 abs_dens =  5.78E-06 rel_dens =  2.89E-06
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 5.6E-04)
+
+Elapsed time for SCF step    28:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   29 ************************
+ etot  =  1.00000000E+00 abs_ev   =  7.93E-10 rel_ev   =  7.93E-10
+ ediff =        7.93E-10 abs_dens =  2.31E-06 rel_dens =  1.16E-06
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 4.3E-04)
+
+Elapsed time for SCF step    29:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   30 ************************
+ etot  =  1.00000000E+00 abs_ev   =  4.61E-10 rel_ev   =  4.61E-10
+ ediff =        4.61E-10 abs_dens =  1.89E-06 rel_dens =  9.47E-07
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 3.3E-04)
+
+Elapsed time for SCF step    30:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   31 ************************
+ etot  =  1.00000000E+00 abs_ev   =  2.44E-10 rel_ev   =  2.44E-10
+ ediff =        2.44E-10 abs_dens =  8.90E-07 rel_dens =  4.45E-07
+Matrix vector products:     27
+Converged eigenvectors:      0
+
+#  State  Eigenvalue [H]  Occupation    Error
+      1        0.500000    2.000000   ( 2.6E-04)
+
+Elapsed time for SCF step    31:          0.01
+**********************************************************************
+
+
+             Info: Writing states. 2024/04/29 at 12:09:28
+
+
+        Info: Finished writing states. 2024/04/29 at 12:09:28
+
+Info: SCF converged in   31 iterations
+
+Info: Number of matrix-vector products:        761
+
+** Warning:
+**   Some of the states are not fully converged!
+
+Info: Finished writing information to 'restart/gs'.
+
+             Calculation ended on 2024/04/29 at 12:09:28
+
+                          Walltime:  01.574s
+
+Octopus emitted 3 warnings.

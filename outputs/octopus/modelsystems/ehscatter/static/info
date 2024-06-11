@@ -1,0 +1,85 @@
+
+******************************** Grid ********************************
+Simulation Box:
+  Type = sphere
+  Radius  [b] =  50.000
+Main mesh:
+  Spacing [b] = ( 0.150)    volume/point [b] =      0.15000
+  # inner mesh =        667
+  # total mesh =        675
+  Grid Cutoff [H] =   219.324542    Grid Cutoff [Ry] =   438.649084
+**********************************************************************
+
+
+***************************** Symmetries *****************************
+Symmetries have been disabled by SymmetriesCompute = false.
+**********************************************************************
+
+
+**************************** Theory Level ****************************
+Input: [TheoryLevel = kohn_sham]
+
+Exchange-correlation:
+  Exchange
+    Exchange in 1D (LDA)
+    [1] N. Helbig, J. I. Fuks, M. Casula, M. J. Verstraete, M. A. L. Marques, I. V. Tokatly, and A. Rubio, Phys. Rev. A 83, 0325
+  Correlation
+    Casula, Sorella & Senatore (LDA)
+    [1] M. Casula, S. Sorella, and G. Senatore, Phys. Rev. B 74, 245427 (2006)
+
+Input: [SICCorrection = sic_none]
+**********************************************************************
+
+SCF converged in   44 iterations
+
+Some of the states are not fully converged!
+Eigenvalues [H]
+ #st  Spin   Eigenvalue      Occupation
+   1   up    -0.413185       1.000000
+   1   dn    -0.160323       0.000000
+   2   up    -0.043819       0.000000
+   2   dn    -0.001357       0.000000
+
+Energy [H]:
+      Total       =        -0.64659384
+      Free        =        -0.64659384
+      -----------
+      Ion-ion     =         0.00000000
+      Eigenvalues =        -0.41318535
+      Hartree     =         0.34060625
+      Int[n*v_xc] =        -0.42518907
+      Exchange    =        -0.31074951
+      Correlation =        -0.00724181
+      vanderWaals =         0.00000000
+      Delta XC    =         0.00000000
+      Entropy     =         0.00000000
+      -TS         =         0.00000000
+      Photon ex.  =         0.00000000
+      Kinetic     =         0.10279065
+      External    =        -0.77199947
+      Non-local   =         0.00000000
+      Int[n*v_E]  =         0.00000000
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Dipole:                 [b]          [Debye]
+      <x> =    1.10291E-07      2.80331E-07
+
+Convergence:
+      abs_energy =  6.57656613E-08 ( 0.00000000E+00) [H]
+      rel_energy =  1.01710920E-07 ( 0.00000000E+00)
+      abs_dens =  7.24470151E-07 ( 0.00000000E+00)
+      rel_dens =  7.24470151E-07 ( 1.00000000E-06)
+      abs_evsum =  2.00937298E-08 ( 0.00000000E+00) [H]
+      rel_evsum =  4.86312732E-08 ( 0.00000000E+00)
+
+Forces on the ions [H/b]
+ Ion                        x
+   1         H  -2.27239738E-08
+ ----------------------------
+ Max abs force   2.27239738E-08
+   Total force  -2.27239738E-08

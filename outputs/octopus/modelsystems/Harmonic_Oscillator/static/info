@@ -1,0 +1,63 @@
+
+******************************** Grid ********************************
+Simulation Box:
+  Type = sphere
+  Radius  [b] =  10.000
+Main mesh:
+  Spacing [b] = ( 0.100)    volume/point [b] =      0.10000
+  # inner mesh =        201
+  # total mesh =        210
+  Grid Cutoff [H] =   493.480220    Grid Cutoff [Ry] =   986.960440
+**********************************************************************
+
+
+***************************** Symmetries *****************************
+Symmetries are disabled since non-spherically symmetric species may be present.
+**********************************************************************
+
+Symmetries have been disabled by SymmetriesCompute = false.
+**********************************************************************
+
+
+**************************** Theory Level ****************************
+Input: [TheoryLevel = independent_particles]
+**********************************************************************
+
+SCF converged in   31 iterations
+
+Some of the states are not fully converged!
+Eigenvalues [H]
+ #st  Spin   Eigenvalue      Occupation
+   1   --     0.500000       2.000000
+
+Energy [H]:
+      Total       =         1.00000000
+      Free        =         1.00000000
+      -----------
+      Ion-ion     =         0.00000000
+      Eigenvalues =         1.00000000
+      Hartree     =         0.00000000
+      Int[n*v_xc] =         0.00000000
+      Exchange    =         0.00000000
+      Correlation =         0.00000000
+      vanderWaals =         0.00000000
+      Delta XC    =         0.00000000
+      Entropy     =         0.00000000
+      -TS         =         0.00000000
+      Photon ex.  =         0.00000000
+      Kinetic     =         0.50000005
+      External    =         0.49999995
+      Non-local   =         0.00000000
+      Int[n*v_E]  =         0.00000000
+
+Dipole:                 [b]          [Debye]
+      <x> =   -1.45500E-10     -3.69823E-10
+
+Convergence:
+      abs_energy =  2.44141818E-10 ( 0.00000000E+00) [H]
+      rel_energy =  2.44141818E-10 ( 0.00000000E+00)
+      abs_dens =  8.89803161E-07 ( 0.00000000E+00)
+      rel_dens =  4.44901580E-07 ( 1.00000000E-06)
+      abs_evsum =  2.44141818E-10 ( 0.00000000E+00) [H]
+      rel_evsum =  2.44141818E-10 ( 0.00000000E+00)
+

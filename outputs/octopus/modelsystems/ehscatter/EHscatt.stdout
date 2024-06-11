@@ -1,0 +1,15 @@
+Looking for Intel MKL or other Intel products? If so, after loading Intel
+oneAPI, use 'module avail' to see the full list of individual components. For
+example, MKL options: 
+1. mkl/latest
+2. mkl/2021.4.0
+3. mkl/2022.1.0
+4. mkl/2022.2.1
+Loading compiler version 2021.4.0
+Loading tbb version 2021.7.1
+Loading compiler-rt version 2022.2.1
+Loading debugger version 2021.7.1
+Loading dpl version 2021.7.2
+Loading oclfpga version 2022.2.1
+Loading mpi version 2021.4.0
+Loading mkl version 2021.4.0

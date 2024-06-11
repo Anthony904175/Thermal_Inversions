@@ -1,0 +1,5 @@
+#     #spin    #nspin    filename
+%vhxc
+       1 |        2 | "vhxc-sp1"
+       2 |        2 | "vhxc-sp2"
+%

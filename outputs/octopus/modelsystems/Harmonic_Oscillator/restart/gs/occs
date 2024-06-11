@@ -1,0 +1,4 @@
+# occupations | eigenvalue[a.u.] | Im(eigenvalue) [a.u.] | k-points | k-weights | filename | ik | ist | idim
+%Occupations_Eigenvalues_K-Points
+ 0.2000000000000000E+01 |  0.5000000001604297E+00 |  0.0000000000000000E+00 |  0.0000000000000000E+00 |  0.1000000000000000E+01 | 0000000001 |        1 |        1 |        1
+%

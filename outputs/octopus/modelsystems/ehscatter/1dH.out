@@ -1,0 +1,2014 @@
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+                                ___
+                             .-'   `'.
+                            /         \
+                            |         ;
+                            |         |           ___.--,
+                   _.._     |0) ~ (0) |    _.---'`__.-( (_.
+            __.--'`_.. '.__.\    '--. \_.-' ,.--'`     `""`
+           ( ,.--'`   ',__ /./;   ;, '.__.'`    __
+           _`) )  .---.__.' / |   |\   \__..--""  """--.,_
+          `---' .'.''-._.-'`_./  /\ '.  \ _.-~~~````~~~-._`-.__.'
+                | |  .' _.-' |  |  \  \  '.               `~---`
+                 \ \/ .'     \  \   '. '-._)
+                  \/ /        \  \    `=.__`~-.
+             jgs  / /\         `) )    / / `"".`\
+            , _.-'.'\ \        / /    ( (     / /
+             `--~`   ) )    .-'.'      '.'.  | (
+                    (/`    ( (`          ) )  '-;
+                     `      '-;         (-'
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2, or (at your option)
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+
+    <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+                           Running octopus
+
+Version                : 12.1
+Commit                 :
+Build time             : Wed Apr 10 13:56:05 PDT 2024
+Configuration options  : maxdim3 openmp mpi sse2 avx libxc_fxc libxc_kxc
+Optional libraries     : gdlib metis scalapack
+Architecture           : x86_64
+C compiler             : mpiicc (icc)
+C compiler flags       : -O3 -qopt-zmm-usage=high -fma -g -traceback
+C++ compiler           : mpiicpc (icpc)
+C++ compiler flags     : -g -O2
+Fortran compiler       : mpiifort (ifort) (Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.4.0 Build 20210910_000000)
+Fortran compiler flags : -O3 -fopenmp
+
+          The octopus is swimming in node053.cluster (Linux)
+
+
+            Calculation started on 2024/05/05 at 15:01:23
+
+
+************************** Calculation Mode **************************
+Input: [CalculationMode = gs]
+**********************************************************************
+
+
+******************************* Space ********************************
+Octopus will run in 1 dimension(s).
+Octopus will treat the system as periodic in 0 dimension(s).
+**********************************************************************
+
+Input: [PseudopotentialSet = standard]
+Reading Coordinates from Coordinates block
+Info: default mass for species H:    1.000000 amu.
+Info: default vdW radius for species H:    0.000000 [b]
+
+****************************** Species *******************************
+Species "H" is a soft-Coulomb potential.
+Number of orbitals:      5
+**********************************************************************
+
+Input: [CurvMethod = curv_affine]
+Input: [DerivativesStencil = stencil_star]
+Input: [SpinComponents = polarized]
+Input: [SymmetrizeDensity = no]
+
+******************************* States *******************************
+Total electronic charge  =        1.000
+Number of states         =        2
+States block-size        =        2
+**********************************************************************
+
+
+************************** Parallelization ***************************
+Info: Octopus will run in *parallel*
+
+      Number of processes           :      56
+      Number of threads per process :       1
+
+Info: Number of nodes in ParKPoints  group:     2 (           2)
+Info: Number of nodes in ParDomains  group:    28 (         667)
+Info: Octopus will waste at least  0.74% of computer time.
+
+** Warning:
+**   I have fewer elements in a parallel group than recommended.
+**   Maybe you should reduce the number of nodes.
+
+**********************************************************************
+
+Info: Parallelization in k-points
+Info: Node in group    0 will manage      1 k-points:     1 -      1
+Info: Node in group    1 will manage      1 k-points:     2 -      2
+
+** Warning:
+**   Could not find 'restart/partition' directory for restart.
+**   No restart information will be read.
+
+Info: Using METIS 5 multilevel k-way algorithm to partition the mesh.
+Info: Mesh Partition restart information will be written to 'restart/partition'.
+Info: Finished writing information to 'restart/partition'.
+Info: Mesh partition:
+
+      Partition quality:    0.588928E-03
+
+                 Neighbours         Ghost points
+      Average  :          2                    8
+      Minimum  :          1                    4
+      Maximum  :          2                    8
+
+      Nodes in domain-group      1
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      2
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      3
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      4
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      5
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      6
+        Neighbours     :         1        Local points    :        24
+        Ghost points   :         4        Boundary points :         4
+      Nodes in domain-group      7
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      8
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group      9
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     10
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     11
+        Neighbours     :         2        Local points    :        23
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     12
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     13
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     14
+        Neighbours     :         2        Local points    :        23
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     15
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     16
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     17
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     18
+        Neighbours     :         2        Local points    :        23
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     19
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     20
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     21
+        Neighbours     :         1        Local points    :        24
+        Ghost points   :         4        Boundary points :         4
+      Nodes in domain-group     22
+        Neighbours     :         2        Local points    :        23
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     23
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     24
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     25
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     26
+        Neighbours     :         2        Local points    :        23
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     27
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+      Nodes in domain-group     28
+        Neighbours     :         2        Local points    :        24
+        Ghost points   :         8        Boundary points :         0
+
+Info: Generating weights for finite-difference discretization of x-gradient
+Info: Generating weights for finite-difference discretization of Laplacian
+
+******************************** Grid ********************************
+Simulation Box:
+  Type = sphere
+  Radius  [b] =  50.000
+Main mesh:
+  Spacing [b] = ( 0.150)    volume/point [b] =      0.15000
+  # inner mesh =        667
+  # total mesh =        675
+  Grid Cutoff [H] =   219.324542    Grid Cutoff [Ry] =   438.649084
+**********************************************************************
+
+Info: states-block size = 0.0 MiB
+Input: [StatesPack = yes]
+Input: [StatesOrthogonalization = cholesky_serial]
+
+**************************** Theory Level ****************************
+Input: [TheoryLevel = kohn_sham]
+
+Exchange-correlation:
+  Exchange
+    Exchange in 1D (LDA)
+    [1] N. Helbig, J. I. Fuks, M. Casula, M. J. Verstraete, M. A. L. Marques, I. V. Tokatly, and A. Rubio, Phys. Rev. A 83, 0325
+  Correlation
+    Casula, Sorella & Senatore (LDA)
+    [1] M. Casula, S. Sorella, and G. Senatore, Phys. Rev. B 74, 245427 (2006)
+
+Input: [SICCorrection = sic_none]
+**********************************************************************
+
+
+****************************** Hartree *******************************
+Input: [DressedOrbitals = no]
+The chosen Poisson solver is 'fast Fourier transform'
+Input: [PoissonFFTKernel = spherical]
+**********************************************************************
+
+Info: FFT grid dimensions       = 1365
+      Total grid size           = 1365 (      0.0 MiB )
+Info: Poisson Cutoff Radius     = 102.4 b
+Input: [FilterPotentials = filter_TS]
+Input: [RelativisticCorrection = non_relativistic]
+Input: [DFTULevel = dft_u_none]
+Input: [MagneticConstrain = 0]
+
+****************** Approximate memory requirements *******************
+Mesh
+  global  :       0.0 MiB
+  local   :       0.0 MiB
+  total   :       0.0 MiB
+
+States
+  real    :       0.0 MiB (par_kpoints + par_states + par_domains)
+  complex :       0.0 MiB (par_kpoints + par_states + par_domains)
+
+**********************************************************************
+
+Info: Generating external potential
+      done.
+Info: Octopus initialization completed.
+Info: Starting calculation mode.
+Info: Allocating ground state wave-functions
+Info: Blocks of states
+      Block       1 contains       2 states:       1 -       2
+Info: Ground-state allocation done.
+Input: [MixField = potential] (what to mix during SCF cycles)
+Input: [MixingScheme = broyden]
+Info: Mixing uses    4 steps and restarts after   20 steps.
+
+**************************** Eigensolver *****************************
+Input: [Eigensolver = cg]
+Input: [Preconditioner = pre_filter]
+Info: Generating weights for finite-difference discretization of Preconditioner
+Input: [PreconditionerFilterFactor = 0.5000]
+Input: [SubspaceDiagonalization = standard]
+**********************************************************************
+
+Input: [EigensolverSkipKpoints = no]
+Input: [LCAOStart = lcao_states]
+Input: [LCAOScaleFactor = 1.000]
+Input: [LCAOMaximumOrbitalRadius = 20.00 b]
+
+** Warning:
+**   Info: 3 of 5 orbitals cannot be used for the LCAO calculation,
+**         their radii exceeds LCAOMaximumOrbitalRadius (  20.0 b).
+
+Info: Single-precision storage for     4 extra orbitals will be allocated.
+Input: [GuessMagnetDensity = ferromagnetic]
+Info: Unnormalized total charge =      1.000000
+Info: Renormalized total charge =      1.000000
+Total Magnetic Moment:
+ mz =   0.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       0.000000
+Info: Setting up Hamiltonian.
+Info: Performing initial LCAO calculation with      2 orbitals.
+Info: Getting Hamiltonian matrix elements.
+ETA: .
+Eigenvalues [H]
+ #st  Spin   Eigenvalue      Occupation
+   1   up    -0.536707       1.000000
+   1   dn    -0.536707       0.000000
+   2   up    -0.230207       0.000000
+   2   dn    -0.230207       0.000000
+Info: Ground-state restart information will be written to 'restart/gs'.
+Info: SCF using real wavefunctions.
+Info: Starting SCF iteration.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    1 ************************
+ etot  = -8.81024802E-01 abs_ev   =  1.19E-01 rel_ev   =  1.82E-01
+ ediff =        8.81E-01 abs_dens =  1.90E+00 rel_dens =  1.90E+00
+Matrix vector products:     32
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.656171    1.000000   ( 2.4E-01)
+      1    dn       -0.656171    0.000000   ( 2.4E-01)
+      2    up       -0.255802    0.000000   ( 1.6E-01)
+      2    dn       -0.255802    0.000000   ( 1.6E-01)
+
+Density of states:
+
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+%--------------------------------------------------------------------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     1:          0.04
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    2 ************************
+ etot  = -8.24458299E-01 abs_ev   =  6.81E-02 rel_ev   =  1.16E-01
+ ediff =        5.66E-02 abs_dens =  5.99E-02 rel_dens =  5.99E-02
+Matrix vector products:     41
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.588046    1.000000   ( 1.8E-01)
+      1    dn       -0.506442    0.000000   ( 1.8E-01)
+      2    up       -0.201189    0.000000   ( 3.8E-02)
+      2    dn       -0.181391    0.000000   ( 4.0E-02)
+
+Density of states:
+
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+%-------------%---------------------------------------------------%--%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     2:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    3 ************************
+ etot  = -6.19014344E-01 abs_ev   =  2.02E-01 rel_ev   =  5.24E-01
+ ediff =        2.05E-01 abs_dens =  2.31E-02 rel_dens =  2.31E-02
+Matrix vector products:     68
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.385830    1.000000   ( 1.6E-01)
+      1    dn       -0.109914    0.000000   ( 2.0E-01)
+      2    up       -0.019856    0.000000   ( 1.2E-02)
+      2    dn        0.028999    0.000000   ( 5.2E-02)
+
+Density of states:
+
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+%---------------------------------------------%--------------%-------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     3:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    4 ************************
+ etot  = -6.44810988E-01 abs_ev   =  2.55E-02 rel_ev   =  6.21E-02
+ ediff =        2.58E-02 abs_dens =  2.60E-03 rel_dens =  2.60E-03
+Matrix vector products:     99
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.411372    1.000000   ( 7.8E-02)
+      1    dn       -0.158878    0.000000   ( 1.4E-01)
+      2    up       -0.042461    0.000000   ( 3.0E-03)
+      2    dn        0.001413    0.000000   ( 2.6E-02)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     4:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    5 ************************
+ etot  = -6.46456081E-01 abs_ev   =  1.63E-03 rel_ev   =  3.96E-03
+ ediff =        1.65E-03 abs_dens =  4.90E-04 rel_dens =  4.90E-04
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413005    1.000000   ( 4.6E-02)
+      1    dn       -0.160061    0.000000   ( 8.0E-02)
+      2    up       -0.043706    0.000000   ( 1.2E-03)
+      2    dn       -0.000169    0.000000   ( 9.6E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     5:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    6 ************************
+ etot  = -6.46631756E-01 abs_ev   =  2.40E-04 rel_ev   =  5.81E-04
+ ediff =        1.76E-04 abs_dens =  3.68E-04 rel_dens =  3.68E-04
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413245    1.000000   ( 3.4E-02)
+      1    dn       -0.160367    0.000000   ( 4.9E-02)
+      2    up       -0.043889    0.000000   ( 6.7E-04)
+      2    dn       -0.000883    0.000000   ( 8.6E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     6:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    7 ************************
+ etot  = -6.46585672E-01 abs_ev   =  2.31E-05 rel_ev   =  5.58E-05
+ ediff =        4.61E-05 abs_dens =  1.21E-04 rel_dens =  1.21E-04
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413222    1.000000   ( 2.5E-02)
+      1    dn       -0.160354    0.000000   ( 3.6E-02)
+      2    up       -0.043866    0.000000   ( 5.1E-04)
+      2    dn       -0.001084    0.000000   ( 4.8E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     7:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    8 ************************
+ etot  = -6.46623738E-01 abs_ev   =  4.85E-06 rel_ev   =  1.17E-05
+ ediff =        3.81E-05 abs_dens =  1.82E-04 rel_dens =  1.82E-04
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413227    1.000000   ( 2.1E-02)
+      1    dn       -0.160370    0.000000   ( 3.3E-02)
+      2    up       -0.043872    0.000000   ( 4.9E-04)
+      2    dn       -0.001175    0.000000   ( 3.5E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     8:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #    9 ************************
+ etot  = -6.46600408E-01 abs_ev   =  2.28E-05 rel_ev   =  5.51E-05
+ ediff =        2.33E-05 abs_dens =  4.10E-05 rel_dens =  4.10E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413204    1.000000   ( 1.8E-02)
+      1    dn       -0.160353    0.000000   ( 2.3E-02)
+      2    up       -0.043852    0.000000   ( 4.8E-04)
+      2    dn       -0.001239    0.000000   ( 4.0E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step     9:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   10 ************************
+ etot  = -6.46614465E-01 abs_ev   =  7.40E-06 rel_ev   =  1.79E-05
+ ediff =        1.41E-05 abs_dens =  6.35E-05 rel_dens =  6.35E-05
+Matrix vector products:     88
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413212    1.000000   ( 1.4E-02)
+      1    dn       -0.160357    0.000000   ( 2.3E-02)
+      2    up       -0.043856    0.000000   ( 4.8E-04)
+      2    dn       -0.001276    0.000000   ( 2.8E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    10:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   11 ************************
+ etot  = -6.46604250E-01 abs_ev   =  5.89E-06 rel_ev   =  1.42E-05
+ ediff =        1.02E-05 abs_dens =  5.51E-05 rel_dens =  5.51E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413206    1.000000   ( 1.2E-02)
+      1    dn       -0.160351    0.000000   ( 1.5E-02)
+      2    up       -0.043849    0.000000   ( 4.7E-04)
+      2    dn       -0.001300    0.000000   ( 2.0E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    11:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   12 ************************
+ etot  = -6.46607885E-01 abs_ev   =  4.15E-06 rel_ev   =  1.00E-05
+ ediff =        3.63E-06 abs_dens =  4.99E-05 rel_dens =  4.99E-05
+Matrix vector products:     90
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413202    1.000000   ( 9.8E-03)
+      1    dn       -0.160344    0.000000   ( 1.4E-02)
+      2    up       -0.043843    0.000000   ( 4.7E-04)
+      2    dn       -0.001316    0.000000   ( 1.4E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    12:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   13 ************************
+ etot  = -6.46579898E-01 abs_ev   =  1.68E-05 rel_ev   =  4.07E-05
+ ediff =        2.80E-05 abs_dens =  7.22E-05 rel_dens =  7.22E-05
+Matrix vector products:    100
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 8.3E-03)
+      1    dn       -0.160322    0.000000   ( 1.2E-02)
+      2    up       -0.043822    0.000000   ( 4.7E-04)
+      2    dn       -0.001314    0.000000   ( 1.4E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    13:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   14 ************************
+ etot  = -6.46605957E-01 abs_ev   =  1.36E-05 rel_ev   =  3.30E-05
+ ediff =        2.61E-05 abs_dens =  7.93E-05 rel_dens =  7.93E-05
+Matrix vector products:    101
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413199    1.000000   ( 7.0E-03)
+      1    dn       -0.160340    0.000000   ( 1.1E-02)
+      2    up       -0.043838    0.000000   ( 4.6E-04)
+      2    dn       -0.001345    0.000000   ( 1.5E-03)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    14:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   15 ************************
+ etot  = -6.46604873E-01 abs_ev   =  1.47E-06 rel_ev   =  3.56E-06
+ ediff =        1.08E-06 abs_dens =  2.71E-05 rel_dens =  2.71E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413200    1.000000   ( 5.5E-03)
+      1    dn       -0.160343    0.000000   ( 7.9E-03)
+      2    up       -0.043840    0.000000   ( 4.5E-04)
+      2    dn       -0.001349    0.000000   ( 6.7E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    15:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   16 ************************
+ etot  = -6.46601882E-01 abs_ev   =  3.46E-06 rel_ev   =  8.37E-06
+ ediff =        2.99E-06 abs_dens =  9.84E-06 rel_dens =  9.84E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413197    1.000000   ( 4.5E-03)
+      1    dn       -0.160338    0.000000   ( 7.5E-03)
+      2    up       -0.043835    0.000000   ( 4.5E-04)
+      2    dn       -0.001352    0.000000   ( 7.9E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    16:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   17 ************************
+ etot  = -6.46600576E-01 abs_ev   =  2.65E-06 rel_ev   =  6.42E-06
+ ediff =        1.31E-06 abs_dens =  1.17E-05 rel_dens =  1.17E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413194    1.000000   ( 4.1E-03)
+      1    dn       -0.160335    0.000000   ( 6.0E-03)
+      2    up       -0.043831    0.000000   ( 4.4E-04)
+      2    dn       -0.001353    0.000000   ( 7.9E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    17:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   18 ************************
+ etot  = -6.46602567E-01 abs_ev   =  2.76E-07 rel_ev   =  6.67E-07
+ ediff =        1.99E-06 abs_dens =  1.03E-05 rel_dens =  1.03E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413194    1.000000   ( 3.4E-03)
+      1    dn       -0.160335    0.000000   ( 5.1E-03)
+      2    up       -0.043832    0.000000   ( 4.1E-04)
+      2    dn       -0.001355    0.000000   ( 5.2E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    18:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   19 ************************
+ etot  = -6.46594827E-01 abs_ev   =  8.55E-06 rel_ev   =  2.07E-05
+ ediff =        7.74E-06 abs_dens =  8.51E-06 rel_dens =  8.51E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413186    1.000000   ( 3.0E-03)
+      1    dn       -0.160323    0.000000   ( 4.9E-03)
+      2    up       -0.043820    0.000000   ( 4.1E-04)
+      2    dn       -0.001351    0.000000   ( 6.4E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    19:          0.01
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   20 ************************
+ etot  = -6.46594123E-01 abs_ev   =  2.48E-06 rel_ev   =  5.99E-06
+ ediff =        7.03E-07 abs_dens =  1.13E-05 rel_dens =  1.13E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413183    1.000000   ( 2.3E-03)
+      1    dn       -0.160320    0.000000   ( 4.4E-03)
+      2    up       -0.043817    0.000000   ( 4.1E-04)
+      2    dn       -0.001351    0.000000   ( 7.3E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    20:          0.00
+**********************************************************************
+
+Info: restarting mixing.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   21 ************************
+ etot  = -6.46593264E-01 abs_ev   =  1.34E-06 rel_ev   =  3.25E-06
+ ediff =        8.59E-07 abs_dens =  1.29E-05 rel_dens =  1.29E-05
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 2.1E-03)
+      1    dn       -0.160322    0.000000   ( 4.0E-03)
+      2    up       -0.043819    0.000000   ( 4.0E-04)
+      2    dn       -0.001353    0.000000   ( 4.6E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    21:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   22 ************************
+ etot  = -6.46593221E-01 abs_ev   =  1.82E-07 rel_ev   =  4.40E-07
+ ediff =        4.38E-08 abs_dens =  2.53E-06 rel_dens =  2.53E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 2.0E-03)
+      1    dn       -0.160322    0.000000   ( 3.6E-03)
+      2    up       -0.043819    0.000000   ( 3.8E-04)
+      2    dn       -0.001354    0.000000   ( 3.5E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    22:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   23 ************************
+ etot  = -6.46593633E-01 abs_ev   =  1.82E-07 rel_ev   =  4.42E-07
+ ediff =        4.13E-07 abs_dens =  2.88E-06 rel_dens =  2.88E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.9E-03)
+      1    dn       -0.160322    0.000000   ( 2.9E-03)
+      2    up       -0.043819    0.000000   ( 3.6E-04)
+      2    dn       -0.001355    0.000000   ( 3.9E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    23:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   24 ************************
+ etot  = -6.46594120E-01 abs_ev   =  1.45E-07 rel_ev   =  3.52E-07
+ ediff =        4.86E-07 abs_dens =  3.32E-06 rel_dens =  3.32E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.8E-03)
+      1    dn       -0.160323    0.000000   ( 2.6E-03)
+      2    up       -0.043819    0.000000   ( 3.5E-04)
+      2    dn       -0.001356    0.000000   ( 3.8E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    24:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   25 ************************
+ etot  = -6.46595344E-01 abs_ev   =  1.83E-08 rel_ev   =  4.42E-08
+ ediff =        1.22E-06 abs_dens =  7.55E-06 rel_dens =  7.55E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.7E-03)
+      1    dn       -0.160323    0.000000   ( 2.6E-03)
+      2    up       -0.043819    0.000000   ( 3.3E-04)
+      2    dn       -0.001357    0.000000   ( 3.3E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    25:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   26 ************************
+ etot  = -6.46594088E-01 abs_ev   =  4.96E-08 rel_ev   =  1.20E-07
+ ediff =        1.26E-06 abs_dens =  8.53E-06 rel_dens =  8.53E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.6E-03)
+      1    dn       -0.160323    0.000000   ( 2.5E-03)
+      2    up       -0.043819    0.000000   ( 3.2E-04)
+      2    dn       -0.001357    0.000000   ( 2.7E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    26:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   27 ************************
+ etot  = -6.46593528E-01 abs_ev   =  1.06E-07 rel_ev   =  2.57E-07
+ ediff =        5.60E-07 abs_dens =  3.69E-06 rel_dens =  3.69E-06
+Matrix vector products:     87
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.5E-03)
+      1    dn       -0.160323    0.000000   ( 2.2E-03)
+      2    up       -0.043819    0.000000   ( 3.2E-04)
+      2    dn       -0.001357    0.000000   ( 2.9E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    27:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   28 ************************
+ etot  = -6.46593096E-01 abs_ev   =  6.05E-08 rel_ev   =  1.46E-07
+ ediff =        4.32E-07 abs_dens =  4.79E-06 rel_dens =  4.79E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.4E-03)
+      1    dn       -0.160323    0.000000   ( 2.1E-03)
+      2    up       -0.043819    0.000000   ( 3.0E-04)
+      2    dn       -0.001357    0.000000   ( 2.4E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    28:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   29 ************************
+ etot  = -6.46593774E-01 abs_ev   =  1.41E-08 rel_ev   =  3.40E-08
+ ediff =        6.78E-07 abs_dens =  4.30E-06 rel_dens =  4.30E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.4E-03)
+      1    dn       -0.160323    0.000000   ( 2.0E-03)
+      2    up       -0.043819    0.000000   ( 2.9E-04)
+      2    dn       -0.001357    0.000000   ( 2.1E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    29:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   30 ************************
+ etot  = -6.46593692E-01 abs_ev   =  9.63E-09 rel_ev   =  2.33E-08
+ ediff =        8.18E-08 abs_dens =  2.15E-06 rel_dens =  2.15E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.3E-03)
+      1    dn       -0.160323    0.000000   ( 1.9E-03)
+      2    up       -0.043819    0.000000   ( 2.7E-04)
+      2    dn       -0.001357    0.000000   ( 1.9E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    30:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   31 ************************
+ etot  = -6.46593984E-01 abs_ev   =  3.49E-09 rel_ev   =  8.44E-09
+ ediff =        2.91E-07 abs_dens =  2.44E-06 rel_dens =  2.44E-06
+Matrix vector products:     86
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.3E-03)
+      1    dn       -0.160323    0.000000   ( 1.9E-03)
+      2    up       -0.043819    0.000000   ( 2.7E-04)
+      2    dn       -0.001357    0.000000   ( 1.9E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    31:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   32 ************************
+ etot  = -6.46593499E-01 abs_ev   =  3.45E-09 rel_ev   =  8.35E-09
+ ediff =        4.85E-07 abs_dens =  3.37E-06 rel_dens =  3.37E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.1E-03)
+      1    dn       -0.160323    0.000000   ( 1.8E-03)
+      2    up       -0.043819    0.000000   ( 2.6E-04)
+      2    dn       -0.001357    0.000000   ( 1.8E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    32:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   33 ************************
+ etot  = -6.46593779E-01 abs_ev   =  1.63E-08 rel_ev   =  3.95E-08
+ ediff =        2.80E-07 abs_dens =  1.82E-06 rel_dens =  1.82E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 1.1E-03)
+      1    dn       -0.160323    0.000000   ( 1.0E-03)
+      2    up       -0.043819    0.000000   ( 2.0E-04)
+      2    dn       -0.001357    0.000000   ( 1.8E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    33:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   34 ************************
+ etot  = -6.46593205E-01 abs_ev   =  1.35E-09 rel_ev   =  3.26E-09
+ ediff =        5.73E-07 abs_dens =  4.01E-06 rel_dens =  4.01E-06
+Matrix vector products:     75
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 8.9E-04)
+      1    dn       -0.160323    0.000000   ( 1.0E-03)
+      2    up       -0.043819    0.000000   ( 2.0E-04)
+      2    dn       -0.001357    0.000000   ( 1.7E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    34:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   35 ************************
+ etot  = -6.46593482E-01 abs_ev   =  1.39E-09 rel_ev   =  3.37E-09
+ ediff =        2.77E-07 abs_dens =  2.72E-06 rel_dens =  2.72E-06
+Matrix vector products:    100
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 7.8E-04)
+      1    dn       -0.160323    0.000000   ( 7.2E-04)
+      2    up       -0.043819    0.000000   ( 2.0E-04)
+      2    dn       -0.001357    0.000000   ( 1.7E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    35:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   36 ************************
+ etot  = -6.46594127E-01 abs_ev   =  1.90E-08 rel_ev   =  4.61E-08
+ ediff =        6.45E-07 abs_dens =  4.19E-06 rel_dens =  4.19E-06
+Matrix vector products:    101
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 7.1E-04)
+      1    dn       -0.160323    0.000000   ( 7.2E-04)
+      2    up       -0.043819    0.000000   ( 1.9E-04)
+      2    dn       -0.001357    0.000000   ( 1.6E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    36:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   37 ************************
+ etot  = -6.46593707E-01 abs_ev   =  4.13E-08 rel_ev   =  1.00E-07
+ ediff =        4.20E-07 abs_dens =  3.01E-06 rel_dens =  3.01E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 6.7E-04)
+      1    dn       -0.160323    0.000000   ( 6.9E-04)
+      2    up       -0.043819    0.000000   ( 1.7E-04)
+      2    dn       -0.001357    0.000000   ( 1.6E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    37:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   38 ************************
+ etot  = -6.46593737E-01 abs_ev   =  1.03E-08 rel_ev   =  2.49E-08
+ ediff =        2.93E-08 abs_dens =  1.54E-06 rel_dens =  1.54E-06
+Matrix vector products:     87
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 6.0E-04)
+      1    dn       -0.160323    0.000000   ( 6.9E-04)
+      2    up       -0.043819    0.000000   ( 1.7E-04)
+      2    dn       -0.001357    0.000000   ( 1.5E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    38:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   39 ************************
+ etot  = -6.46593717E-01 abs_ev   =  1.84E-08 rel_ev   =  4.44E-08
+ ediff =        1.99E-08 abs_dens =  1.44E-06 rel_dens =  1.44E-06
+Matrix vector products:    101
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 5.7E-04)
+      1    dn       -0.160323    0.000000   ( 6.3E-04)
+      2    up       -0.043819    0.000000   ( 1.6E-04)
+      2    dn       -0.001357    0.000000   ( 1.4E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    39:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   40 ************************
+ etot  = -6.46593782E-01 abs_ev   =  1.53E-08 rel_ev   =  3.71E-08
+ ediff =        6.52E-08 abs_dens =  1.17E-06 rel_dens =  1.17E-06
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 4.8E-04)
+      1    dn       -0.160323    0.000000   ( 6.1E-04)
+      2    up       -0.043819    0.000000   ( 1.5E-04)
+      2    dn       -0.001357    0.000000   ( 1.4E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    40:          0.00
+**********************************************************************
+
+Info: restarting mixing.
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   41 ************************
+ etot  = -6.46593782E-01 abs_ev   =  3.80E-08 rel_ev   =  9.19E-08
+ ediff =        3.84E-10 abs_dens =  9.30E-07 rel_dens =  9.30E-07
+Matrix vector products:    108
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 4.6E-04)
+      1    dn       -0.160323    0.000000   ( 5.9E-04)
+      2    up       -0.043819    0.000000   ( 1.4E-04)
+      2    dn       -0.001357    0.000000   ( 1.4E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    41:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   42 ************************
+ etot  = -6.46593805E-01 abs_ev   =  3.27E-08 rel_ev   =  7.91E-08
+ ediff =        2.36E-08 abs_dens =  1.03E-06 rel_dens =  1.03E-06
+Matrix vector products:     89
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 4.1E-04)
+      1    dn       -0.160323    0.000000   ( 4.2E-04)
+      2    up       -0.043819    0.000000   ( 1.4E-04)
+      2    dn       -0.001357    0.000000   ( 1.3E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    42:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   43 ************************
+ etot  = -6.46593909E-01 abs_ev   =  4.68E-08 rel_ev   =  1.13E-07
+ ediff =        1.04E-07 abs_dens =  9.47E-07 rel_dens =  9.47E-07
+Matrix vector products:     98
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 4.0E-04)
+      1    dn       -0.160323    0.000000   ( 4.2E-04)
+      2    up       -0.043819    0.000000   ( 1.1E-04)
+      2    dn       -0.001357    0.000000   ( 1.3E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    43:          0.00
+**********************************************************************
+
+ETA: .......1......2.......3......4......5.......6......7.......8......9......0
+
+
+*********************** SCF CYCLE ITER #   44 ************************
+ etot  = -6.46593843E-01 abs_ev   =  2.01E-08 rel_ev   =  4.86E-08
+ ediff =        6.58E-08 abs_dens =  7.24E-07 rel_dens =  7.24E-07
+Matrix vector products:     87
+Converged eigenvectors:      0
+
+#  State  Spin  Eigenvalue [H]  Occupation    Error
+      1    up       -0.413185    1.000000   ( 3.8E-04)
+      1    dn       -0.160323    0.000000   ( 4.0E-04)
+      2    up       -0.043819    0.000000   ( 1.1E-04)
+      2    dn       -0.001357    0.000000   ( 1.2E-04)
+
+Density of states:
+
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+%-----------------------------------------%-------------------%------%
+^
+
+Total Magnetic Moment:
+ mz =   1.000000
+Local Magnetic Moments (sphere radius [b] = 100.000):
+ Ion                    mz
+   1         H       1.000000
+
+Elapsed time for SCF step    44:          0.00
+**********************************************************************
+
+
+             Info: Writing states. 2024/05/05 at 15:01:24
+
+
+        Info: Finished writing states. 2024/05/05 at 15:01:24
+
+Info: SCF converged in   44 iterations
+
+Info: Number of matrix-vector products:       4338
+
+** Warning:
+**   Some of the states are not fully converged!
+
+Info: Finished writing information to 'restart/gs'.
+
+             Calculation ended on 2024/05/05 at 15:01:24
+
+                          Walltime:  00.822s
+
+Octopus emitted 4 warnings.
