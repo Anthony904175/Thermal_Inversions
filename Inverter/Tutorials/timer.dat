@@ -1,0 +1,57 @@
+
+Host: APJGROUP-IMAC.local
+
+Timers On : Wed Jun 12 14:54:47 2024
+Timers Off: Wed Jun 12 14:54:47 2024
+
+Wall Time:        0.58 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+DFH: sparsity prep                  :      0.000u      0.017s      0.004w      1 calls
+Libint2ERI::Libint2ERI              :      0.000u      0.017s      0.004w      3 calls
+DFH: initialize()                   :      0.017u      0.000s      0.006w      1 calls
+DFH: AO Construction                :      0.000u      0.000s      0.001w      1 calls
+DFH: AO-Met. Contraction            :      0.000u      0.000s      0.000w      1 calls
+HF: Form core H                     :      0.000u      0.000s      0.000w      1 calls
+HF: Form S/X                        :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                           :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                          :      0.000u      0.000s      0.001w      8 calls
+JK: D                               :      0.000u      0.000s      0.000w      8 calls
+JK: USO2AO                          :      0.000u      0.000s      0.000w      8 calls
+JK: JK                              :      0.000u      0.000s      0.001w      8 calls
+DFH: compute_JK()                   :      0.000u      0.000s      0.001w      8 calls
+DFH: Grabbing AOs                   :      0.000u      0.000s      0.000w      8 calls
+DFH: compute_J                      :      0.000u      0.000s      0.000w      8 calls
+DFH: compute_K                      :      0.000u      0.000s      0.001w      8 calls
+JK: AO2USO                          :      0.000u      0.000s      0.000w      8 calls
+HF: Form F                          :      0.000u      0.000s      0.000w      8 calls
+HF: DIIS                            :      0.117u      0.033s      0.145w      8 calls
+HF: Form C                          :      0.017u      0.000s      0.001w      8 calls
+HF: Form D                          :      0.000u      0.000s      0.000w      8 calls
+
+--------------------------------------------------------------------------------------
+DFH: sparsity prep                  :      0.000u      0.017s      0.004w      1 calls
+| Libint2ERI::Libint2ERI            :      0.000u      0.017s      0.003w      1 calls
+DFH: initialize()                   :      0.017u      0.000s      0.006w      1 calls
+| Libint2ERI::Libint2ERI            :      0.000u      0.000s      0.002w      2 calls
+| DFH: AO Construction              :      0.000u      0.000s      0.001w      1 calls
+| DFH: AO-Met. Contraction          :      0.000u      0.000s      0.000w      1 calls
+HF: Form core H                     :      0.000u      0.000s      0.000w      1 calls
+HF: Form S/X                        :      0.000u      0.000s      0.000w      1 calls
+HF: Guess                           :      0.000u      0.000s      0.000w      1 calls
+HF: Form G                          :      0.000u      0.000s      0.001w      8 calls
+| JK: D                             :      0.000u      0.000s      0.000w      8 calls
+| JK: USO2AO                        :      0.000u      0.000s      0.000w      8 calls
+| JK: JK                            :      0.000u      0.000s      0.001w      8 calls
+| | DFH: compute_JK()               :      0.000u      0.000s      0.001w      8 calls
+| | | DFH: Grabbing AOs             :      0.000u      0.000s      0.000w      8 calls
+| | | DFH: compute_J                :      0.000u      0.000s      0.000w      8 calls
+| | | DFH: compute_K                :      0.000u      0.000s      0.001w      8 calls
+| JK: AO2USO                        :      0.000u      0.000s      0.000w      8 calls
+HF: Form F                          :      0.000u      0.000s      0.000w      8 calls
+HF: DIIS                            :      0.117u      0.033s      0.145w      8 calls
+HF: Form C                          :      0.017u      0.000s      0.001w      8 calls
+HF: Form D                          :      0.000u      0.000s      0.000w      8 calls
+
+**************************************************************************************
