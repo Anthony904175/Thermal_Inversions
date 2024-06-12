@@ -47,3 +47,25 @@ x = np.linspace(0,10,npoints)[:,None]
 y = np.zeros_like(x)
 z = y
 grid = np.concatenate((x,y,z), axis=1).T
+#let us invert the kohn-sham equations:
+vxc_inverted = ine.invert('direct', grid=grid, correction=False)
+#Compare the performance of direct and reversed calculation of vxc. 
+vxc0 = ine.eng.grid.vxc(Da=wfn.Da().np, Db=wfn.Db().np, grid=grid)
+
+#---------------> Plot
+fig, ax = plt.subplots(1,1, dpi=100)
+
+
+#---------------> Data
+ax.plot(x, vxc0, label="Forward DFT")
+ax.plot(x, vxc_inverted, label="Inverted DFT")
+
+#---------------> Formatting
+ax.set_xlim(0.001,10)
+ax.set_ylim(-10,1)
+ax.set_ylabel('Density (e/$b_0^3$)')
+ax.set_xscale('log')
+ax.set_xlabel('z ($b_0$)')
+ax.legend()
+
+fig.suptitle("Neon Atom Vxc")
